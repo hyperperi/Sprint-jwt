@@ -1,0 +1,34 @@
+POST http://localhost:3000/reviews
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTc0MjQ0MDEyMSwiZXhwIjoxNzQyNDQzNzIxfQ.Mlx8U1H2vWTl7vnZZm-mhRTrfdZ_XzjTFRBPFN4-0UQ
+
+{
+  "title": "Great Product",
+  "description": "Very good!",
+  "rating": 5,
+  "productId": 1,
+  "authorId": 1
+}
+
+
+### 리뷰 리스트
+GET http://localhost:3000/reviews/
+
+### 리뷰
+GET http://localhost:3000/reviews/4
+
+### 리뷰 수정
+PUT http://localhost:3000/reviews/8
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTc0MjQ0MDEyMSwiZXhwIjoxNzQyNDQzNzIxfQ.Mlx8U1H2vWTl7vnZZm-mhRTrfdZ_XzjTFRBPFN4-0UQ
+
+{
+  "title": "Great Product",
+  "description": "Very good!",
+  "rating": 10
+}
+
+### 리뷰 삭제
+DELETE http://localhost:3000/reviews/8
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTc0MjQ0MDEyMSwiZXhwIjoxNzQyNDQzNzIxfQ.Mlx8U1H2vWTl7vnZZm-mhRTrfdZ_XzjTFRBPFN4-0UQ

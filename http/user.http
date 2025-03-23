@@ -1,0 +1,34 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "password"
+}
+
+
+### 토큰 로그인
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "ivan@codeit.kr",
+  "password": "password"
+}
+
+### 액세스 토큰, 리프레쉬 토큰 갱신
+POST http://localhost:3000/token/refresh
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTc0MjQ0MzU2MywiZXhwIjoxNzQzNjUzMTYzfQ.1vUsYA-5qOlcMjeHW95-aKfWwDU_iiBjWzuP3f2ucWA; 
+
+### 세션 로그인
+POST http://localhost:3000/session-login
+Content-Type: application/json
+
+{
+  "email": "mark@codeit.kr",
+  "password": "password"
+}
+
+### 로그아웃 (세션 쿠키 사용)
+POST http://localhost:3000/session-logout
+Cookie: connect.sid=s%3ADb63WckBe-Kwfyc8w0ywjEeQPNZxFSNY.kY9JquCtPrJFBBceUJL8LDYrq%2F9pD92g1VLfz1j%2FEXY;

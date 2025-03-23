@@ -1,0 +1,8 @@
+POST http://localhost:3000/products
+Content-Type: application/json
+Cookie: connect.sid=s%3A1YvKlnuEPKDw8bpBQBwzz5lG2mCOCbW3.JEcgxQ8zeYtiR3%2FeB61RgJp0jAs%2F4ED05OuI7X9GmKt;
+
+{
+  "name": "Product 1",
+  "price": 100
+}
